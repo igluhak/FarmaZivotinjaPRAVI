@@ -23,7 +23,7 @@ namespace FarmaZivotinja.Core
             }
         }
 
-        // Backwards-compatible wrapper koji si koristio u MainForm
+        
         internal void DodajZivotinju(Zivotinja zivotinja)
         {
             Dodaj(zivotinja);
@@ -41,7 +41,7 @@ namespace FarmaZivotinja.Core
         {
             lock (_lock)
             {
-                return Zivotinje.ToList(); // vraća kopiju
+                return Zivotinje.ToList(); 
             }
         }
 
